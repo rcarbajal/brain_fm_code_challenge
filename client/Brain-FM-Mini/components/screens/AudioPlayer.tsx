@@ -1,16 +1,15 @@
 import React from 'react';
 import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { GlobalStyles } from '../../styles/Stylesheet';
-import { RouteProp, useRoute } from '@react-navigation/native';
+import { AudioPlayerStackScreenProps } from '../../models/RootStackParamList';
 
-export default function AudioPlayer() {
+const AudioPlayer: React.FC<AudioPlayerStackScreenProps> = (props) => {
     const isPlaying: boolean = false;
-    const route = useRoute<RouteProp<{ params?: { bg?: string }}>>();
 
     const PlayerStyles = StyleSheet.create({
         infoContainer: {
-            backgroundColor: route?.params?.bg,
-            borderColor: route?.params?.bg,
+            backgroundColor: props.route?.params?.bg,
+            borderColor: props.route?.params?.bg,
             borderWidth: 2,
             borderRadius: 10,
             padding: 15,
@@ -18,8 +17,8 @@ export default function AudioPlayer() {
         },
         controlsContainer: {
             marginTop: 50,
-            backgroundColor: route?.params?.bg,
-            borderColor: route?.params?.bg,
+            backgroundColor: props.route?.params?.bg,
+            borderColor: props.route?.params?.bg,
             borderWidth: 2,
             borderRadius: 10,
             padding: 15,
@@ -53,3 +52,5 @@ export default function AudioPlayer() {
         </View>
     );
 }
+
+export default AudioPlayer;

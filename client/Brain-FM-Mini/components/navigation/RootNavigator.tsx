@@ -4,12 +4,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Screens } from '../../data/constants';
 import MentalStateLanding from '../screens/MentalStateLanding';
 import AudioPlayer from '../screens/AudioPlayer';
-import { Pressable } from 'react-native';
+import { RootStackParamList } from '../../models/RootStackParamList';
 
-const Stack  = createStackNavigator();
+const Stack  = createStackNavigator<RootStackParamList>();
 
 export default function RootNavigator() {
-    const navigationRef = useRef(undefined);
+    const navigationRef = useRef<any>(undefined);
 
     return (
         <NavigationContainer ref={navigationRef}>
