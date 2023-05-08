@@ -9,6 +9,10 @@ import useAudioPlayback from '../../utils/useAudioPlayback';
 
 const AudioPlayer: React.FC<AudioPlayerStackScreenProps> = (props) => {
     const PlayerStyles = StyleSheet.create({
+        mainViewContainer: {
+            height: '100%', 
+            backgroundColor: '#1B1738'
+        },
         infoContainer: {
             backgroundColor: props.route?.params?.bg,
             borderColor: props.route?.params?.bg,
@@ -27,10 +31,19 @@ const AudioPlayer: React.FC<AudioPlayerStackScreenProps> = (props) => {
             flexDirection: 'row',
             justifyContent: 'center',
         },
+        mainScroller: { 
+            flex: 1, 
+            flexDirection: 'column', 
+            justifyContent: 'center'
+        },
         playerIcon: {
             width: 50,
             height: 50,
-        }
+        },
+        time: { 
+            fontSize: 90,
+            fontWeight: 'bold' 
+        },
     });
 
     const [tracks, setTracks] = useState<Track[]>([]);
@@ -96,12 +109,12 @@ const AudioPlayer: React.FC<AudioPlayerStackScreenProps> = (props) => {
     }, [playback?.position]);
 
     return (
-        <View style={{height: '100%', backgroundColor: '#1B1738'}}>
-            <ScrollView contentContainerStyle={[GlobalStyles.main, { flex: 1, flexDirection: 'column', justifyContent: 'center'}]}>
+        <View style={PlayerStyles.mainViewContainer}>
+            <ScrollView contentContainerStyle={[GlobalStyles.main, PlayerStyles.mainScroller]}>
                 <Image style={GlobalStyles.iconImage} source={require('../../assets/landing_icon.png')} resizeMode='contain' />
                 <View style={PlayerStyles.infoContainer}>
                     <Text style={GlobalStyles.text}>{title}</Text>
-                    <Text style={[GlobalStyles.text, { fontSize: 90, fontWeight: 'bold' }]}>{time}</Text>
+                    <Text style={[GlobalStyles.text, PlayerStyles.time]}>{time}</Text>
                 </View>
                 <View style={PlayerStyles.controlsContainer}>
                     {!playback?.isPlaying && (
