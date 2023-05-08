@@ -16,7 +16,7 @@ Copy the `.env.example` file to `.env`. Update the containing environment variab
 `DEFAULT_TIMEOUT`: Default timeout time in milliseconds for requests made to the API service. By default, this timeout is set to 30 seconds.
 
 ### 3. Run the app
-**NOTE** This step requires either a simulator/emulator or a physical device to run the app.<br /><br />
+**NOTE**: This step requires either a simulator/emulator or a physical device to run the app.<br /><br />
 
 Open a command-line terminal and navigate to the `client/Brain-FM-Mini` folder. Run the following command to start the Metro server:
 ```bash
