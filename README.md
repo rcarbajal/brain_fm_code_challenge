@@ -35,5 +35,5 @@ Client setup: [Documentation](./client/Brain-FM-Mini/README.md)
 - [X] three mp3s have been provided for each mental state. you can use those as the audio files in this project.
 
 ### submission
-- [ ] when you are done, please zip up the folder and e-mail to d.phillips@brain.fm.
-- [ ] make sure to include your `.git` folder in the zip file!
+- [X] when you are done, please zip up the folder and e-mail to d.phillips@brain.fm.
+- [X] make sure to include your `.git` folder in the zip file!
