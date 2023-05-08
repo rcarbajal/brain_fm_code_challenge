@@ -4,8 +4,8 @@
 
 ## Local development environment setup
 
-Local development environment setup instructions for the API and client can be found in the README documentation in each project's subfolder.
-API setup: [Documentation](./api/brain_fm_api/README.md)
+Local development environment setup instructions for the API and client can be found in the README documentation in each project's subfolder.<br /><br />
+API setup: [Documentation](./api/brain_fm_api/README.md)<br />
 Client setup: [Documentation](./client/Brain-FM-Mini/README.md)
 
 ## Project instructions
