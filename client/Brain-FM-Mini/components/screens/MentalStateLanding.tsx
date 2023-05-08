@@ -3,7 +3,7 @@ import { Image, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-nat
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { GlobalStyles } from '../../styles/Stylesheet';
 import { Screens } from '../../data/constants';
-import { MentalStateStackScreenProps } from '../../models/RootStackParamList';
+import { MentalStateStackScreenProps } from '../../types/RootStackParamList';
 
 const MentalStateLanding: React.FC<MentalStateStackScreenProps> = (props) => {
     const LandingStyles = StyleSheet.create({

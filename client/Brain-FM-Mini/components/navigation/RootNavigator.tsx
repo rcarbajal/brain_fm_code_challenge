@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Screens } from '../../data/constants';
 import MentalStateLanding from '../screens/MentalStateLanding';
 import AudioPlayer from '../screens/AudioPlayer';
-import { RootStackParamList } from '../../models/RootStackParamList';
+import { RootStackParamList } from '../../types/RootStackParamList';
 
 const Stack  = createStackNavigator<RootStackParamList>();
 
