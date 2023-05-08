@@ -2,6 +2,14 @@
 
 ## mini brain.fm
 
+## Local development environment setup
+
+Local development environment setup instructions for the API and client can be found in the README documentation in each project's subfolder.
+API setup: [Documentation](./api/brain_fm_api/README.md)
+Client setup: [Documentation](./client/Brain-FM-Mini/README.md)
+
+## Project instructions
+
 ### instructions
 - [X] create a react native app with two screens.
 - [X] the landing screen is a menu that lets you choose whether to "focus", "relax", or "sleep". (these are called "mental states").
