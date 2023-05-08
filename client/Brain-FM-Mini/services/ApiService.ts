@@ -47,7 +47,7 @@ export default class ApiService {
         method: HttpMethod,
         body: string | null = null,
         headersConfig: Record<string, string> = {}
-    ) {    
+    ) {
         const headers = {
             Accept: "application/json",
             "Content-Type": "application/json",

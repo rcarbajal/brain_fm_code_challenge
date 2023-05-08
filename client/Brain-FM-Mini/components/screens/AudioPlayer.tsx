@@ -19,6 +19,7 @@ const AudioPlayer: React.FC<AudioPlayerStackScreenProps> = (props) => {
             borderWidth: 2,
             borderRadius: 10,
             padding: 15,
+            width: '100%',
             alignItems: 'center',
         },
         controlsContainer: {
