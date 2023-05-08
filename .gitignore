@@ -1,11 +1,14 @@
 # compiled output
 api/brain_fm_api/dist
 api/brain_fm_api/node_modules
+client/Brain-FM-Mini/node_modules/
+client/Brain-FM-Mini/dist/
+client/Brain-FM-Mini/.expo/
+client/Brain-FM-Mini/web-build/
 
 # Logs
 logs
 *.log
-npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -33,3 +36,13 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# client-specific files
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+.metro-health-check*
