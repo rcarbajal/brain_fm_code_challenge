@@ -10,5 +10,8 @@ export const GlobalStyles = StyleSheet.create({
     text: {
         color: '#fff',
         fontSize: 24,
-    }
+    },
+    iconImage: {
+        marginBottom: 50,
+    },
 });
