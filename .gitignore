@@ -46,3 +46,4 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 .metro-health-check*
+.env

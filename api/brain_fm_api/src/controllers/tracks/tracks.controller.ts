@@ -1,4 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
+import { ApiResponse } from 'src/models/ApiResponse';
 import { Track } from 'src/models/Track';
 import { TracksService } from 'src/services/tracks/tracks.service';
 
@@ -7,17 +8,23 @@ export class TracksController {
     constructor(private service: TracksService) {}
 
     @Get('focus')
-    public getFocusTracklist(): Track[] {
-        return this.service.getFocusTracks();
+    public getFocusTracklist(): ApiResponse<Track[]> {
+        return {
+            data: this.service.getFocusTracks(),
+        };
     }
 
     @Get('relax')
-    public getRelaxTracklist(): Track[] {
-        return this.service.getRelaxTracks();
+    public getRelaxTracklist(): ApiResponse<Track[]> {
+        return {
+            data: this.service.getRelaxTracks(),
+        };
     }
 
     @Get('sleep')
-    public getSleepTracklist(): Track[] {
-        return this.service.getSleepTracks();
+    public getSleepTracklist(): ApiResponse<Track[]> {
+        return {
+            data: this.service.getSleepTracks(),
+        };
     }
 }
