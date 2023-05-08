@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Backend API for Mini Brain.fm code challenge written with [Nest](https://github.com/nestjs/nest) framework TypeScript
 
 ## Installation
 
@@ -45,17 +45,16 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
+The service will start and listen on `localhost` port 3000 as `http://localhost:3000`. Available endpoints:
 ```bash
-# unit tests
-$ npm run test
+# Retrieve list of focus tracks
+/tracks/focus
 
-# e2e tests
-$ npm run test:e2e
+# Retrieve list of relaxation tracks
+/tracks/relax
 
-# test coverage
-$ npm run test:cov
+# Retrieve list of sleep tracks
+/tracks/sleep
 ```
 
 ## Support

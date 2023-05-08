@@ -8,7 +8,7 @@ Local development environment setup instructions for the API and client can be f
 API setup: [Documentation](./api/brain_fm_api/README.md)<br />
 Client setup: [Documentation](./client/Brain-FM-Mini/README.md)
 
-## Project instructions
+## Project requirements
 
 ### instructions
 - [X] create a react native app with two screens.
