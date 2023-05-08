@@ -29,6 +29,9 @@ export default class ApiService {
 
         try {
             response = await this.fetchLocal(path, 'GET');
+            response.data?.forEach((track) => {
+                track.url = API_URL + track.url;
+            })
         }
         catch (err: any) {
             response = {
